@@ -14,3 +14,4 @@ config:
   PATH_TO_KEY: "/full-path-to/my-key/" # Full path to the .pem file
   WORKER_SECURITY_GROUP: "" # If empty creates a new group by default. You can also add a specific SG. See the SG link in the FAQs section
   MASTER_SECURITY_GROUP: "" # If empty creates a new group by default. You can also add a specific SG. See the SG link in the FAQs section
+  EBS_VOLUME_SIZE: "32" # Size in GB of attached EBS volume

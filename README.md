@@ -81,6 +81,7 @@ b) **A valid EC2 key pair**. [Click here]( https://docs.aws.amazon.com/AWSEC2/la
       PATH_TO_KEY: "/full-path-to/my-key/" # Full path to the .pem file
       WORKER_SECURITY_GROUP: "" # If empty creates a new group by default. You can also add a specific SG. See the SG link in the FAQs section
       MASTER_SECURITY_GROUP: "" # If empty creates a new group by default. You can also add a specific SG. See the SG link in the FAQs section
+      EBS_VOLUME_SIZE: "32" # Size in GB of attached EBS volume
     ```
 
     3.1. Select the **EC2** instances for your `MASTER_INSTANCE_TYPE` and your `WORKER_INSTANCE_TYPE`. It is recommended to use a small generic EC2 for the master, such as  `m4.large`, and more powerful EC2s (compute or memory optimized) for your worker nodes such as `r4.4large`. See the different EC2 types [available  here](https://aws.amazon.com/ec2/instance-types/).
